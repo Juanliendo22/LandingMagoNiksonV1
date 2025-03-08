@@ -1478,19 +1478,19 @@
 				var fecha = document.getElementById("inputDate").value;
 				var hora = document.getElementById("inputTime").value;
 				var observacion = document.getElementById("inputObservation").value.trim();
-
+		
 				// Validación de campos obligatorios
 				if (nombre === "" || email === "" || direccion === "" || tipoPresentacion === "" || fecha === "" || hora === "") {
 					alert("Por favor, completa todos los campos obligatorios antes de enviar la reserva.");
 					return;
 				}
-
+		
 				// Número de WhatsApp (Panamá: +507 6055-6108)
 				var numeroWhatsApp = "50760556108"; // Asegúrate de que el número no tenga espacios ni caracteres especiales.
-
+		
 				// Mensaje formateado de forma estética
 				var textoMensaje = `✨ *Solicitud de Reserva* ✨
-
+		
 		*📌 Nombre Completo:* ${nombre}
 		*📧 Correo Electrónico:* ${email}
 		*🏠 Dirección:* ${direccion}
@@ -1498,9 +1498,9 @@
 		*📅 Fecha:* ${fecha}
 		*⏰ Hora:* ${hora}
 		*📝 Observaciones:* ${observacion || "Ninguna"}
-
+		
 		📲 *Por favor, confirmar disponibilidad. ¡Gracias!*`;
-
+		
 				// Enviar a WhatsApp
 				var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(textoMensaje);
 				window.open(url, "_blank");
