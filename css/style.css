@@ -1432,7 +1432,6 @@ h6 {
 }
 .contact-section .map-wrapper {
   min-height: 400px;
-  background: #f9f9f9;
   margin-right: 90px;
   border-radius: 10px;
 }
@@ -1457,17 +1456,23 @@ h6 {
 }
 .contact-section input,
 .contact-section textarea {
-  border-radius: 4px !important;
+  border-radius: 30px !important;
+  margin-top: 5px;
+  color:#ffc300;
 }
 .contact-section textarea {
   min-height: 183px;
+  color: #ffc300;
 }
 .contact-section .form-control {
   padding: 12px 18px;
+  color: #ffc300;
+
 }
 .contact-section .form-control:focus {
   border-color: #fea68f;
   box-shadow: none;
+  color: #ffc300;
 }
 .contact-section button {
   font-family: 'Poppins', sans-serif;
@@ -1511,10 +1516,14 @@ h6 {
 }
 .dark-mode .contact-section .form-control {
   border-color: #606060;
-  background: #ffffff;
+  background: #000000;
+  color: #ffc300;
+  border-radius: 30px;
+  margin-top: 5px;
 }
 .dark-mode .contact-section .form-control:focus {
   border-color: #ffc300;
+  
 }
 /***********************************************************
   16. Site Footer 
