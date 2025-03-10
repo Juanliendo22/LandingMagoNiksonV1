@@ -66,12 +66,13 @@
 		        <li class="nav-item">
 		          <a class="nav-link" href="#testimonial-section">Comentarios</a>
 		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#blog-section">Blog</a>
-		        </li>
+		       
 		        <li class="nav-item">
 		          <a class="nav-link" href="#contact-section">Contacto</a>
-		        </li>
+		        </li> 
+					<a href="https://magonikson.site.agendapro.com/pa/sucursal/342825" class="reservas-btn">Reservas!</a>
+				  
+
 		      </ul> <!-- .navbar-nav -->
 		    </div> <!-- .collapse -->
 		  </div> <!-- .container -->
@@ -1513,7 +1514,70 @@
 		<img class="de-contact-2 elem-updown" width="100px" src="image/design-elements/elemento4.png" alt="contact element 2">
 	</div> <!-- .design-elements -->
 </section> <!-- .contact-section -->
+<!-- Popup -->
+<!-- ...existing code... -->
 
+<!-- Popup Modal -->
+<div id="testimonialPopup" class="popup-modal">
+	<div class="card">
+	  <div class="header">
+		<span class="icon">
+		  <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+			<path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+		  </svg>
+		</span>
+		<p class="alert">Reserva ahora!</p>
+		<span class="close-popup">&times;</span>
+	  </div>
+  
+	  <p class="message">
+		¡Reserva Ahora y Haz de tu Evento un Momento Único!
+	  </p>
+  
+	  <div class="actions">
+		<a class="read" href="https://magonikson.site.agendapro.com/pa/sucursal/342825" target="_blank">
+		  Chequear agenda
+		</a>
+		
+	  </div>
+	</div>
+  </div>
+  
+  
+  <!-- ...existing code... -->
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+	  var popup = document.getElementById("testimonialPopup");
+	  var closeBtn = document.querySelector(".close-popup");
+  
+	  function showPopup() {
+		  if (!sessionStorage.getItem("popupDisplayed")) {
+			  popup.style.display = "block";
+		  }
+	  }
+  
+	  function hidePopup() {
+		  popup.style.display = "none";
+		  sessionStorage.setItem("popupDisplayed", "true");
+	  }
+  
+	  closeBtn.addEventListener("click", hidePopup);
+  
+	  window.addEventListener("scroll", function() {
+		  var testimonialSection = document.getElementById("testimonial-section");
+		  var rect = testimonialSection.getBoundingClientRect();
+		  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+			  showPopup();
+		  }
+	  });
+  });
+  </script>
+  
+  <a class="btn-whatsapp" href="https://wa.me/50760556108?text=Hola%20Mago%20Nikson%2C%20me%20gustaría%20reservar%20un%20show" target="_blank">
+    <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+</a>
+  
 	<!-- SITE FOOTER -->
 <footer class="site-footer" id="site-footer">
     <div class="container">

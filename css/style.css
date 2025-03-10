@@ -2426,3 +2426,153 @@ h6 {
 }
 
 
+
+/* Popup Modal */
+/* Popup Modal */
+.popup-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%; /* Centrado horizontal */
+  top: 50%; /* Centrado vertical */
+  transform: translate(-50%, -50%); /* Alineación perfecta */
+  width: 90%; /* Tamaño ajustable para pantallas pequeñas */
+  max-width: 320px; /* Limita el ancho máximo */
+  height: auto;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  border-width: 1px;
+  border-color: rgba(219, 234, 254, 1);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem;
+  margin: 0; /* Eliminar márgenes innecesarios */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgb(196, 0, 0);
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.alert {
+  font-weight: 600;
+  color: rgba(107, 114, 128, 1);
+}
+
+.message {
+  margin-top: 1rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.actions {
+  margin-top: 1.5rem;
+}
+
+.actions a {
+  text-decoration: none;
+}
+
+.read {
+  display: inline-block;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background-color: rgb(196, 0, 0);
+  color: rgba(255, 255, 255, 1);
+}
+
+.mark-as-read {
+  margin-top: 0.5rem;
+  background-color: rgba(249, 250, 251, 1);
+  color: rgba(107, 114, 128, 1);
+  transition: all .15s ease;
+}
+
+.mark-as-read:hover {
+  background-color: rgb(230, 231, 233);
+}
+
+
+.reservas-btn {
+
+  background: #000000;
+  color: white;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Usa el color del texto del botón */
+}
+
+.reservas-btn:hover {
+  color: white;
+
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.reservas-btn:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+
+
+/* Estilos para el icono flotante */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+  background-color: #25D366; /* Color de fondo de WhatsApp */
+  color: white; /* Color del icono */
+  font-size: 36px; /* Tamaño del icono */
+  padding: 15px; /* Espaciado alrededor del icono */
+  border-radius: 50%; /* Hacerlo circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto flotante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+  transition: transform 0.3s ease; /* Transición suave cuando se pasa el mouse */
+}
+
+/* Efecto hover para el icono */
+.btn-whatsapp:hover {
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+/* Efecto active cuando se hace clic en el icono */
+.btn-whatsapp:active {
+  transform: scale(0.95); /* Reducir el tamaño ligeramente al hacer clic */
+}
