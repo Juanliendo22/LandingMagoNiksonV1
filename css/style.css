@@ -1160,6 +1160,7 @@ h6 {
   position: relative;
   overflow: hidden;
 }
+
 .blog-section .image-wrapper:after {
   content: '';
   position: absolute;
@@ -2576,3 +2577,4 @@ h6 {
 .btn-whatsapp:active {
   transform: scale(0.95); /* Reducir el tamaño ligeramente al hacer clic */
 }
+
